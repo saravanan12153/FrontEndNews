@@ -8,6 +8,12 @@ $(document).ready(function(){
 
         $(this).text('Liked!')
         .closest('.news-item')
-        .addClass('is-liked');
+        .addClass('<is-l></is-l>iked');
+    });
+
+    $('.js-add-link').on('click',function(event){
+        event.preventDefault();
+
+        $('.js-form').toggleClass('is-visible');
     });
 });
