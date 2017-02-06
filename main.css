@@ -76,6 +76,16 @@ a:focus {
     margin-bottom: 10px;
 }
 
+.news-meta-item {
+    display: inline;
+    margin-right: 15px;
+}
+
+/*-----------------------------
+* Content
+----------------------------*/
+
+
 /*-----------------------------
 * Container
 ----------------------------*/
@@ -85,7 +95,22 @@ a:focus {
     max-width: 800px;
 }
 
-.news-meta-item {
-    display: inline;
-    margin-right: 20px;
+/*-----------------------------
+* state
+----------------------------*/
+.is-liked {
+    animation: flash 2s;
 }
+
+/*-----------------------------
+* animation
+----------------------------*/
+@keyframes flash {
+    from, 50%, to {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+}
+
